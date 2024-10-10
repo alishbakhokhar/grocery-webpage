@@ -1,0 +1,202 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out; /* Transition for all elements */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2ecc71;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s; /* Fade-in animation */
+}
+
+header h1 {
+    font-size: 3rem;
+    animation: slideInDown 2s; /* Slide-in animation */
+}
+
+header p {
+    font-size: 1.2rem;
+    animation: slideInUp 2s; /* Slide-in animation */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #27ae60;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #d1f5e9;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('pic/grocery.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+    animation: fadeIn 2s; /* Fade-in animation */
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideInUp 2s; /* Slide-in animation */
+}
+
+.banner p {
+    font-size: 1.5rem;
+}
+
+.shop-now {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.shop-now:hover {
+    background-color: #c0392b;
+    transform: scale(1.1);
+}
+
+/* Products Section */
+.products {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    animation: fadeIn 2s; /* Fade-in animation */
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition for hover effects */
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #2ecc71;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 10px 15px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for button */
+}
+
+.product-card button:hover {
+    background-color: #1e8449;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    background-color: #ecf0f1; /* Change color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
